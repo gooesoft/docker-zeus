@@ -3,7 +3,7 @@ FROM alpine:3.3
 
 
 RUN apk --update add \
-  dcron \
+
   nginx \
   curl \
   php-curl \
@@ -30,7 +30,7 @@ RUN apk --update add \
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 
 
-
+CMD ["crond"]
 
 
 
