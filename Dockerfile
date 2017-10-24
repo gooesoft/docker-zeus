@@ -3,6 +3,7 @@ FROM alpine:3.3
 
 
 RUN apk --update add \
+  dcron \
   nginx \
   curl \
   php-curl \
