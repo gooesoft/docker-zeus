@@ -10,7 +10,9 @@ RUN apk --update add \
   php-soap \
   php-zip \
   php-dom \
+  php-exif \
   php-phar \
+  php-fpm \
   php-fpm \
   php-xml \
   php-pdo \
@@ -23,6 +25,7 @@ RUN apk --update add \
   php-pdo_sqlite \
   php-ctype \
   php-zlib \
+
   git \
   supervisor \
   && rm /var/cache/apk/*
